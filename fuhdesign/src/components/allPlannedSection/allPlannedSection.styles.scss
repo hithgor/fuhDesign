@@ -1,0 +1,167 @@
+.allPlannedSection {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 1100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  @media (max-width: 1250px) {
+    height: 800px;
+  }
+  @media (max-width: 800px) {
+    height: 600px;
+  }
+  .allPlannedTitle {
+    width: 930px;
+    height: 280px;
+    margin-top: 40px;
+    margin-left: 100px;
+    @media (max-width: 1400px) {
+      font-size: 80px;
+    }
+    h1 {
+      font-size: 120px;
+      font-weight: 800;
+      color: #282f39;
+      @media (max-width: 1850px) {
+        margin: 0;
+      }
+      @media (max-width: 1400px) {
+        font-size: 80px;
+        margin: 0;
+      }
+      @media (max-width: 800px) {
+        font-size: 60px;
+        max-width: 70%;
+        margin-left: -40px;
+        margin-top: -20px;
+      }
+    }
+  }
+  .allPlannedButtons {
+    margin-top: 70px;
+    margin-left: 40px;
+    @media (max-width: 1850px) {
+      margin: 0px;
+      position: absolute;
+      top: 40%;
+      right: 0px;
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+    }
+    @media (max-width: 1600px) {
+      top: 20%;
+    }
+    @media (max-width: 1200px) {
+      top: 40%;
+      flex-direction: row;
+      width: 60%;
+    }
+    @media (max-width: 800px) {
+      top: 320px;
+      flex-direction: row;
+      width: 80%;
+    }
+    .button {
+      width: 425px;
+      height: 400px;
+      background-color: whitesmoke;
+      border-radius: 70px;
+      border: 1px solid #707070;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      @media (max-width: 1850px) {
+        width: 100%;
+        height: 225px;
+        border-radius: 0px;
+      }
+      @media (max-width: 800px) {
+        max-height: 130px;
+      }
+      img {
+        margin-top: 40px;
+        width: 190px;
+        @media (max-width: 1850px) {
+          width: 30%;
+          margin-top: -5px;
+        }
+        @media (max-width: 800px) {
+          max-height: 45%;
+        }
+      }
+      h3 {
+        color: #282f39;
+        font-size: 40px;
+        font-weight: 600;
+        @media (max-width: 1850px) {
+          font-size: 30px;
+        }
+        @media (max-width: 800px) {
+          font-size: 18px;
+        }
+      }
+      &:hover {
+        background-color: darken(whitesmoke, 10%);
+        transition: all 0.3s;
+      }
+    }
+    .buttonLower {
+      margin-top: 20px;
+      margin-left: 350px;
+      @media (max-width: 1850px) {
+        margin: 0;
+      }
+    }
+  }
+  .videoOverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    video {
+      width: 100%;
+      @media (max-width: 1700px) {
+        width: 1700px;
+        overflow-x: hidden;
+      }
+      @media (max-width: 1250px) {
+        width: 1200px;
+        overflow-x: hidden;
+      }
+      @media (max-width: 800px) {
+        width: 800px;
+        overflow-x: hidden;
+      }
+    }
+  }
+  .coolTriangleContainer {
+    position: absolute;
+    bottom: -430px;
+    left: -90px;
+    @media (max-width: 1750px) {
+      bottom: -340px;
+    }
+    @media (max-width: 1500px) {
+        bottom: -350px;
+      }
+      @media (max-width: 1100px) {
+        top: 330px;
+      } 
+
+    img {
+      width: 1440px;
+      @media (max-width: 1850px) {
+        width: 90%;
+      }
+      @media (max-width: 1100px) {
+        width: 900px;
+      } 
+    }
+  }
+}

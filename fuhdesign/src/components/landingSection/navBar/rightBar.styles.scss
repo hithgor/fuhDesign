@@ -1,0 +1,46 @@
+.rightBarMainDiv {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 950px;
+    overflow: visible;
+    border-left: 3px solid #707070;
+    z-index: 3;
+
+    .formIconsContainer {
+        width: 100%;
+        height: 310px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 420px;
+        .formIconContainer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                opacity: .8;
+                transition: ease-in;
+                transition-duration: 100ms;
+            }
+            .formIcon {
+                height: 52px;
+                width: 70px;
+                box-shadow: 10px black;
+            }
+            p {
+                padding: 0px;
+                font-size: 14px;
+                color: #282F39;
+                font-weight: 600;
+                box-shadow: 10px black;
+
+            }
+        }
+
+    }
+}

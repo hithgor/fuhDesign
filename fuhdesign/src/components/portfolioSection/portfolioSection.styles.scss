@@ -1,0 +1,171 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+.portfolioSection {
+  width: 100%;
+  position: relative;
+  height: 1420px;
+  @media (max-width: 1800px) {
+    height: 1220px;
+  } 
+  @media (max-width: 1300px) {
+    height: 1120px;
+  } 
+  @media (max-width: 1100px) {
+    height: 1020px;
+  } 
+  .portfolioSectionTitleDiv {
+    position: absolute;
+    top: 0px;
+    right: 85px;
+    width: 637px;
+    @media (max-width: 1100px) {
+      right: 65px;
+      width: 437px;
+    } 
+    h1 {
+      font-size: 140px;
+      color: #282f39;
+      line-height: 168px;
+      @media (max-width: 1100px) {
+        font-size: 100px;
+        line-height: 98px;
+      } 
+    }
+  }
+  .portfolioSectionDivider {
+    width: 1200px;
+    border-bottom: 1px solid #707070;
+    position: relative;
+    top: 475px;
+    right: 0px;
+    opacity: 0.9;
+    margin-left: 555px;
+    @media (max-width: 1100px) {
+      margin-left: 0px;
+      top: 315px;
+      right: 250px;
+      width: 1100px;
+    } 
+  }
+
+  .portfolioSectionOuterGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding-top: 450px;
+    @media (max-width: 1100px) {
+      padding-top: 320px;
+    } 
+
+    .innerGridLeft {
+
+        .bigPhoto {
+          position: relative;
+            width: 960px;
+            margin-left: 95px;
+            margin-top: 170px;
+            @media (max-width: 1800px) {
+              width: 95%;
+            } 
+            @media (max-width: 1100px) {
+              width: 100%;
+            } 
+            .dashedBackgroundSquare {
+              z-index: -1;
+              position: absolute;
+              bottom: 0%;
+              left: 25%;
+              img {
+                width: 130%;
+                @media (max-width: 1800px) {
+                } 
+              }
+            }
+        }
+    }
+
+    .innerGridRight {
+        display: flex;
+        flex-direction: column;
+      .portfolioSectionWallOfText {
+        margin-top: 30px;
+        margin-left: 140px;
+        width: 550px;
+        @media (max-width: 1100px) {
+          margin-top: 0px;
+          margin-left: 20px;
+          width: 450px;
+        } 
+        h3 {
+            padding-top: 10px;
+          font-size: 25px;
+          color: #282f39;
+          @media (max-width: 1100px) {
+            font-size: 18px;
+            padding-top: 0px;
+          } 
+        }
+      }
+      .innerGridRightPortfolioGrid {
+          display: grid;
+          width: 854px;
+          height: 712px;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          margin-top: 250px;
+
+          @media (max-width: 1700px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            max-width: 90%;
+            margin-left: 5%;
+            margin-top: 100px;
+            height: 600px;
+          } 
+          @media (max-width: 1500px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            width: 90%;
+            height: 400px;
+          } 
+
+          img {
+              width: 185px;
+              height: 166px;
+              border: 1px black dashed;
+              background-color: whitesmoke;
+              @media (max-width: 1600px) {
+                width: 165px;
+                height: 156px;
+              } 
+              @media (max-width: 1500px) {
+                width: 65%;
+                height: 90%;
+              } 
+
+          }
+          .mediaDisappear {
+            @media (max-width: 1500px) {
+              display: none;
+            } 
+          }
+
+      }
+    }
+  }
+  .rightBottomBackgroundCircle {
+      position: absolute;
+      top: 85%;
+      left: 75%;
+      z-index: -2;
+      @media (max-width: 1900px) {
+        top: 75%;
+        left: 75%;
+        height: 400px;
+        overflow: hidden;
+        img {
+          overflow-y: hidden;
+        }
+      } 
+  }
+
+}
