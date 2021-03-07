@@ -230,9 +230,15 @@
     @media (max-width: 1850px) {
       right: 70%;
     }
+    @media (max-width: 1850px) {
+      top:125%;
+    }
     img {
       @media (max-width: 1850px) {
         width: 1200px;
+      }
+      @media (max-width: 900px) {
+        width: 800px;
       }
     }
   }

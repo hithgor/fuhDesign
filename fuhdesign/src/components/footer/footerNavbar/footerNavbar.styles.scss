@@ -11,8 +11,8 @@
     height: 120px;
   }
   @media (max-width: 900px) {
-    height: 100px;
-  }
+    height: 30px;
+  } 
   .footerLogoContainer {
     margin-left: 100px;
     margin-top: 90px;
@@ -23,6 +23,12 @@
     @media (max-width: 950px) {
       margin-top: 7%;
     }
+    @media (max-width: 900px) {
+      margin-top: 0px;
+    } 
+    @media (max-width: 500px) {
+      margin-left: 5%;
+    } 
     h5 {
       color: #c2c4c3;
       @media (max-width: 1450px) {
@@ -49,6 +55,9 @@
       justify-content: flex-start;
       width: 100%;
     }
+    @media (max-width: 900px) {
+      display: none;
+    } 
     .footerNavLinkItem {
       margin-top: 15px;
       font-family: "Roboto";
