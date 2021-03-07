@@ -40,16 +40,16 @@ const ProductCatalogSection = () => {
             </h3>
           </div>
           <div className="innerGridLeftContainer">
-            <div className="supplierOuterDiv"></div>
-            <div className="supplierOuterDiv"></div>
+            <div className="supplierOuterDiv hidden900"></div>
+            <div className="supplierOuterDiv hidden900"></div>
           </div>
         </div>
         <div className="outerGridRightContainer">
           <div className="supplierOuterDiv"></div>
           <div className="supplierOuterDiv"></div>
           <div className="supplierOuterDiv"></div>
-          <div className="supplierOuterDiv mediaHidden"></div>
-          <div className="supplierOuterDiv mediaHidden"></div>
+          <div className="supplierOuterDiv mediaHidden shown900"></div>
+          <div className="supplierOuterDiv mediaHidden shown900"></div>
           <div className="supplierOuterDiv mediaHidden"></div>
           <div className="supplierOuterDiv mediaHidden"></div>
           <div className="supplierOuterDiv mediaHidden"></div>

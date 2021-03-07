@@ -7,6 +7,11 @@
     overflow: visible;
     border-left: 3px solid #707070;
     z-index: 3;
+    @media (max-width: 900px) {
+        width: 15%;
+        min-width: 75px;
+        height: 100%;
+      }
 
     .formIconsContainer {
         width: 100%;
@@ -16,11 +21,16 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 420px;
+        @media (max-width: 900px) {
+            margin-top: 120px;
+            justify-content: space-around;
+          }
         .formIconContainer {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             cursor: pointer;
             &:hover {
                 opacity: .8;
@@ -31,6 +41,10 @@
                 height: 52px;
                 width: 70px;
                 box-shadow: 10px black;
+                @media (max-width: 900px) {
+                    width: 55px;
+                    height: 42px;
+                  }
             }
             p {
                 padding: 0px;
@@ -38,6 +52,9 @@
                 color: #282F39;
                 font-weight: 600;
                 box-shadow: 10px black;
+                @media (max-width: 900px) {
+                    font-size: 12px;
+                  }
 
             }
         }

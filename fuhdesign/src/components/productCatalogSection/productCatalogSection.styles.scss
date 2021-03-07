@@ -14,14 +14,27 @@
   }
   @media (max-width: 1100px) {
     height: 820px;
-  } 
+  }
+  @media (max-width: 800px) {
+    margin-left: 20px;
+  }
+  @media (max-width: 900px) {
+    height: fit-content;
+  }
+  @media (max-width: 700px) {
+    top: -140px;
+  }
   .productCatalogTitleDiv {
     position: absolute;
     top: -230px;
     width: 740px;
     @media (max-width: 1850px) {
-        max-width: 80%;
-      }
+      max-width: 80%;
+    }
+    @media (max-width: 700px) {
+      top: -70px;
+    }
+
     h1 {
       font-size: 140px;
       color: #282f39;
@@ -29,7 +42,12 @@
       @media (max-width: 1100px) {
         font-size: 100px;
         line-height: 98px;
-      } 
+      }
+      @media (max-width: 700px) {
+        font-size: 46px;
+        line-height: 44px;
+        width: 270px;
+      }
     }
   }
   .productCatalogDivider {
@@ -41,8 +59,12 @@
     margin-left: 50px;
     @media (max-width: 1100px) {
       top: 85px;
-    } 
-    
+    }
+    @media (max-width: 700px) {
+      top: 70px;
+      margin-left: 25px;
+      width: 75%;
+    }
   }
   .outerGridContainer {
     position: relative;
@@ -52,8 +74,11 @@
     grid-template-columns: 1fr 1fr;
     @media (max-width: 1100px) {
       top: 105px;
-      width: 900px;
-    } 
+    }
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+    }
 
     .outerGridRightContainer {
       height: 990px;
@@ -70,12 +95,28 @@
         height: 780px;
       }
       @media (max-width: 1100px) {
-        padding-right: 20px
-      } 
+        padding-right: 20px;
+      }
+      @media (max-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90%;
+        margin-left: 10%;
+        max-width: 100%;
+        padding-right: 0px;
+        height: fit-content;
+      }
       .mediaHidden {
         @media (max-width: 1500px) {
-            display: none;
-          }
+          display: none;
+        }
+      }
+      .shown900 {
+        @media (max-width: 900px) {
+          display: flex;
+        }
       }
 
       .supplierOuterDiv {
@@ -85,13 +126,24 @@
         border-radius: 42px;
         border: 1px solid #707070;
         @media (max-width: 1850px) {
-            width: 270px;
-            height: 190px;
-          }
-          @media (max-width: 1100px) {
-            width: 250px;
-            height: 180px;
-          } 
+          width: 270px;
+          height: 190px;
+        }
+        @media (max-width: 1100px) {
+          width: 250px;
+          height: 180px;
+        }
+        @media (max-width: 900px) {
+          margin-top: 10px;
+          width: 28%;
+          height: 100px;
+          justify-content: center;
+          align-items: center;
+        }
+        @media (max-width: 500px) {
+          margin-top: 10px;
+          height: 80px;
+        }
       }
     }
   }
@@ -99,6 +151,9 @@
     height: 990px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 900px) {
+      height: fit-content;
+    }
     .wallOfText {
       text-align: left;
       width: 590px;
@@ -109,15 +164,27 @@
       }
       @media (max-width: 1100px) {
         width: 440px;
-      } 
+      }
+      @media (max-width: 900px) {
+        margin-left: 5%;
+      }
+      @media (max-width: 700px) {
+        max-width: 90%;
+      }
       h3 {
         font-weight: 600;
         color: #282f39;
         font-size: 25px;
         @media (max-width: 1400px) {
-            font-size: 18px;
-          }
-
+          font-size: 18px;
+        }
+        @media (max-width: 900px) {
+          margin-left: 5%;
+        }
+        @media (max-width: 550px) {
+          margin-left: 3%;
+          font-size: 16px;
+        }
       }
     }
     .innerGridLeftContainer {
@@ -129,7 +196,10 @@
       @media (max-width: 1100px) {
         padding-left: 0px;
         width: 100%;
-      } 
+      }
+      @media (max-width: 700px) {
+        margin-top: 0px;
+      }
       .supplierOuterDiv {
         width: 320px;
         height: 210px;
@@ -137,13 +207,18 @@
         border-radius: 42px;
         border: 1px solid #707070;
         @media (max-width: 1850px) {
-            width: 275px;
-            height: 190px;
-          } 
-          @media (max-width: 1100px) {
-            width: 250px;
-            height: 180px;
-          } 
+          width: 275px;
+          height: 190px;
+        }
+        @media (max-width: 1100px) {
+          width: 250px;
+          height: 180px;
+        }
+      }
+      .hidden900 {
+        @media (max-width: 900px) {
+          display: none;
+        }
       }
     }
   }
@@ -153,12 +228,12 @@
     top: 100%;
     z-index: -1;
     @media (max-width: 1850px) {
-        right: 70%;
-      } 
+      right: 70%;
+    }
     img {
-        @media (max-width: 1850px) {
-            width: 1200px;
-          } 
+      @media (max-width: 1850px) {
+        width: 1200px;
+      }
     }
   }
   .backgroundCircleContainer2 {
@@ -167,14 +242,13 @@
     top: 25%;
     z-index: -1;
     @media (max-width: 1050px) {
-        right: -60%;
-      } 
+      right: -60%;
+    }
 
     img {
-        @media (max-width: 1850px) {
-            max-width: 180%;
-          } 
-        
+      @media (max-width: 1850px) {
+        max-width: 180%;
+      }
     }
   }
 }

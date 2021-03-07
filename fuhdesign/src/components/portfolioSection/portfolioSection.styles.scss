@@ -12,6 +12,15 @@
   @media (max-width: 1100px) {
     height: 1020px;
   } 
+  @media (max-width: 900px) {
+    top: 50px;
+    height: fit-content;
+  } 
+  @media (max-width: 700px) {
+   padding-bottom: 50px;
+   top: 0px;
+   } 
+
   .portfolioSectionTitleDiv {
     position: absolute;
     top: 0px;
@@ -20,7 +29,12 @@
     @media (max-width: 1100px) {
       right: 65px;
       width: 437px;
-    } 
+    }
+    @media (max-width: 500px) {
+      right: 25px;
+      width: 327px;
+      max-width: 80%;
+     } 
     h1 {
       font-size: 140px;
       color: #282f39;
@@ -28,6 +42,10 @@
       @media (max-width: 1100px) {
         font-size: 100px;
         line-height: 98px;
+      } 
+      @media (max-width: 700px) {
+        font-size: 46px;
+        line-height: 44px;
       } 
     }
   }
@@ -45,6 +63,15 @@
       right: 250px;
       width: 1100px;
     } 
+    @media (max-width: 700px) {
+      top: 100px;
+      width: 60%;
+      margin-left: 0px;
+      left: 30%;
+    } 
+    @media (max-width: 500px) {
+      top: 140px;
+     } 
   }
 
   .portfolioSectionOuterGrid {
@@ -55,6 +82,15 @@
     @media (max-width: 1100px) {
       padding-top: 320px;
     } 
+    @media (max-width: 700px) {
+     padding-top: 120px;
+     display: flex;
+     flex-direction: column-reverse;
+     flex-wrap: wrap;
+    } 
+    @media (max-width: 500px) {
+      padding-top: 140px;
+     } 
 
     .innerGridLeft {
 
@@ -68,7 +104,15 @@
             } 
             @media (max-width: 1100px) {
               width: 100%;
-            } 
+            }
+            @media (max-width: 748px) {
+              margin-top: 200px;
+             }  
+             @media (max-width: 700px) {
+              width: 80%;
+              margin-left: 10px;
+              margin-top: 20px;
+             } 
             .dashedBackgroundSquare {
               z-index: -1;
               position: absolute;
@@ -95,6 +139,9 @@
           margin-left: 20px;
           width: 450px;
         } 
+        @media (max-width: 900px) {
+          width: 90%;
+         } 
         h3 {
             padding-top: 10px;
           font-size: 25px;
@@ -103,6 +150,9 @@
             font-size: 18px;
             padding-top: 0px;
           } 
+          @media (max-width: 900px) {
+            font-size: 16px;
+           } 
         }
       }
       .innerGridRightPortfolioGrid {
@@ -127,6 +177,9 @@
             width: 90%;
             height: 400px;
           } 
+          @media (max-width: 700px) {
+            display: none;
+           } 
 
           img {
               width: 185px;
@@ -157,15 +210,20 @@
       top: 85%;
       left: 75%;
       z-index: -2;
+      height: 400px;
+      overflow-y: hidden;
       @media (max-width: 1900px) {
         top: 75%;
         left: 75%;
-        height: 400px;
         overflow: hidden;
         img {
           overflow-y: hidden;
         }
-      } 
+      }
+      @media (max-width: 800px) {
+        top: 70%;
+        left: 60%;
+       } 
   }
 
 }
